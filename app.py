@@ -14,7 +14,7 @@ openai.api_key = "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"
 # Initialize Telegram bot
 bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=["GET", "POST"])
 def main():
     if request.method == 'POST':
         # Get the user's message from the request
